@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="simple.min.css">
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.10.1/css/pro.min.css">
+  <title>SimpleCSS</title>
+</head>
+
+<body>
+  <nav class="navbar-fixed bg-danger">
+    <div class="logo">
+      <span class="text-logo bg-light text-danger">Logo</span>
+    </div>
+    <ul class="list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="hero" class="hero-lg">
+    <div class="hero-content text-light">
+      <p class="hero-headline">Welcome</p>
+      <p class="hero-subheadline">This is my site!</p>
+      <button class="btn btn-danger mt-3">Learn More</button>
+    </div>
+  </header>
+
+  <section id="features" class="my-3">
+    <div class="container">
+      <div class="alert bg-danger">
+        <p>This is an alert!</p>
+      </div>
+
+      <div class="grid-3 text-center mb-3">
+        <div class="card bg-warning">
+          <h2>First Item <span class="badge">1</span></h2>
+        </div>
+        <div class="card bg-danger">
+          <h2>Second Item <span class="badge">2</span></h2>
+        </div>
+        <div class="card bg-success">
+          <h2>Third Item <span class="badge">3</span></h2>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <section id="signup" class="my-3">
+    <div class="container">
+      <div class="form-wrapper shadow mb-3">
+        <form>
+          <img height="250px" src="https://source.unsplash.com/category/buildings/900x600/" alt="Buildings">
+          <h1 class="text-xl text-center">Signup Form</h1>
+          <p class="text-lead text-center mb-1">Enter your name and email to join others.</p>
+          <div class="form-group">
+            <label for="name">Name:
+              <input type="text" id="name">
+              <small class="form-text">Enter your first name...</small>
+            </label>
+            <label for="email">Email:
+              <input type="text" id="email">
+              <small class="form-text">Enter your first name...</small>
+            </label>
+          </div>
+          <button class="btn btn-block btn-danger">Submit</button>
+        </form>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <section id="video" class="my-3">
+    <div class="container">
+      <div class="mb-3">
+        <div class="video-wrapper bg-light p">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/O4iGNXsqghs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <form>
+          <h1 class="text-xl text-center">Video Signup</h1>
+          <h3 class="text-center mb-1">Enter your name and email to join others.</h3>
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Enter name...">
+            <input type="text" id="email" placeholder="Enter email...">
+          </div>
+          <button class="btn btn-block btn-danger">Submit</button>
+        </form>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+
+  <section id="custom-signup" class="my-3">
+    <div class="container">
+      <div class="mb-3">
+        <form>
+          <h1 class="text-xl text-center">Custom Form</h1>
+          <h3 class="text-center mb-1">Enter your name and email to join others.</h3>
+          <div class="form-group-inline">
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="text" id="address" placeholder="Address">
+            <input type="text" id="address2" placeholder="Address 2">
+          </div>
+          <div class="form-group-inline">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="state" placeholder="State">
+            <input type="text" id="zipcode" placeholder="Zip">
+          </div>
+          <button class="btn btn-block btn-danger">Submit</button>
+        </form>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <section id="input-groups" class="my-3">
+    <div class="container">
+      <div class="mb-3">
+        <form>
+          <div class="input-group">
+            <input type="text">
+            <button type="button" class="btn">Submit</button>
+          </div>
+          <div class="input-group">
+            <button type="button" class="btn">Submit</button>
+            <input type="text">
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="First">
+            <input type="text" placeholder="Middle">
+            <input type="text" placeholder="Last">
+            <button type="button" class="btn">Submit</button>
+          </div>
+          <div class="input-group">
+            <button type="button" class="btn">Option 1</button>
+            <button type="button" class="btn">Option 2</button>
+            <button type="button" class="btn">Option 3</button>
+          </div>
+          <div>
+            <select name="select" id="select" class="dropdown">
+              <option value="0" selected disabled>Choose an option...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <section id="cards" class="my-3">
+    <div class="container">
+      <div class="grid-2 mb-3">
+        <div class="card bg-primary">
+          <h1 class="text-center">Card 1</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic totam voluptate, reprehenderit perspiciatis exercitationem iusto.</p>
+        </div>
+        <div class="card bg-warning">
+          <h1 class="text-center">Card 2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic totam voluptate, reprehenderit perspiciatis exercitationem iusto.</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <section id="buttons" class="car my-3">
+    <div class="container">
+      <button class="btn btn-sm btn-primary m">Submit</button>
+      <button class="btn btn-success m">Refresh</button>
+      <button class="btn btn-lg btn-warning m">Load</button>
+      <button class="btn btn-xl btn-danger m">Cancel</button>
+    </div>
+  </section>
+
+  <section id="buttons" class="car my-3">
+    <div class="container">
+      <button class="btn btn-primary m">Submit</button>
+      <button class="btn btn-success m">Refresh</button>
+      <button class="btn btn-warning m">Load</button>
+      <button class="btn btn-danger m">Cancel</button>
+    </div>
+  </section>
+
+  <section id="buttons" class="my-3">
+    <div class="container">
+      <div class="mb-3">
+        <button class="btn btn-block btn-primary mb-1">Submit</button>
+        <button class="btn btn-block btn-success mb-1">Refresh</button>
+        <button class="btn btn-block btn-warning mb-1">Load</button>
+        <button class="btn btn-block btn-danger">Cancel</button>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <section id="tables" class="my-3">
+    <div class="container">
+      <div class="mb-3">
+        <table>
+          <thead>
+            <tr>
+              <th class="bg-danger">Name</th>
+              <th class="bg-danger">ID</th>
+              <th class="bg-danger">Favorite Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jim</td>
+              <td>00001</td>
+              <td>Blue</td>
+            </tr>
+            <tr>
+              <td>Sue</td>
+              <td>00002</td>
+              <td>Red</td>
+            </tr>
+            <tr>
+              <td>Barb</td>
+              <td>00003</td>
+              <td>Green</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <section id="progress-bars" class="my-3">
+    <div class="container">
+      <div class="progress progress-sm mb-1">
+        <div class="progress-bar w-10">10%</div>
+      </div>
+      <div class="progress progress-secondary mb-1">
+        <div class="progress-bar w-20">20%</div>
+      </div>
+      <div class="progress progress-lg progress-success mb-1">
+        <div class="progress-bar w-30">30%</div>
+      </div>
+      <div class="progress progress-sm progress-info mb-1">
+        <div class="progress-bar w-40">40%</div>
+      </div>
+      <div class="progress progress-warning mb-1">
+        <div class="progress-bar w-50">50%</div>
+      </div>
+      <div class="progress progress-lg progress-danger mb-1">
+        <div class="progress-bar w-60">60%</div>
+      </div>
+      <div class="bg-danger p-1 mb-1">
+        <div class="progress progress-sm progress-light">
+          <div class="progress-bar w-70">70%</div>
+        </div>
+      </div>
+      <div class="bg-danger p-1 mb-1">
+        <div class="progress progress-dark">
+          <div class="progress-bar w-80">80%</div>
+        </div>
+      </div>
+      <div class="bg-danger p-1 mb-1">
+        <div class="progress progress-lg progress-muted">
+          <div class="progress-bar w-90">90%</div>
+        </div>
+      </div>
+      <div class="progress progress-indeterminate">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
