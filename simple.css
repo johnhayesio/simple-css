@@ -8,6 +8,7 @@
   --hero-bg-image: url("https://source.unsplash.com/category/buildings/900x600/");
   --hero-bg-image-brightness: 50%;
   --container-margin: 3rem auto;
+  --hero-headline-margin-mobile: 7.7rem 0 0 0; /* 7.7rem 0 0 0 w/Navbar Logo */
   --container-width: var(--container-max-width-xl);
   --border-radius-all: 5px;
 
@@ -1629,7 +1630,7 @@ tbody tr:nth-child(odd) {
   }
 
   .hero-fixed .hero-headline {
-    margin-top: 7.7rem;
+    margin: var(--hero-headline-margin-mobile);
   }
 
   /* Text */
