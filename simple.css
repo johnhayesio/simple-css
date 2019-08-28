@@ -183,7 +183,7 @@
 
   /* Lists */
   --list-margin: 0.5rem 0;
-  --list-padding: 0 0 0.3rem 0;
+  --list-padding: 0;
 
   /* Tables */
   --table-color: var(--color-white);
@@ -1249,6 +1249,12 @@ tbody tr:nth-child(odd) {
   height: 100%;
 }
 
+/* Border */
+.b {
+  border: 2px solid var(--state-light);
+  border-radius: var(--border-radius-all);
+}
+
 /* Border Radius */
 .br {
   border-radius: var(--border-radius);
@@ -1548,6 +1554,51 @@ tbody tr:nth-child(odd) {
 .text-muted,
 .text-muted a {
   color: var(--color-silver);
+}
+
+.b-primary {
+  border: 2px solid var(--state-primary);
+  border-radius: var(--border-radius-all);
+}
+
+.b-secondary {
+  border: 2px solid var(--state-secondary);
+  border-radius: var(--border-radius-all);
+}
+
+.b-success {
+  border: 2px solid var(--state-success);
+  border-radius: var(--border-radius-all);
+}
+
+.b-info {
+  border: 2px solid var(--state-info);
+  border-radius: var(--border-radius-all);
+}
+
+.b-warning {
+  border: 2px solid var(--state-warning);
+  border-radius: var(--border-radius-all);
+}
+
+.b-danger {
+  border: 2px solid var(--state-danger);
+  border-radius: var(--border-radius-all);
+}
+
+.b-light {
+  border: 2px solid var(--state-light);
+  border-radius: var(--border-radius-all);
+}
+
+.b-dark {
+  border: 2px solid var(--state-dark);
+  border-radius: var(--border-radius-all);
+}
+
+.b-muted {
+  border: 2px solid var(--state-muted);
+  border-radius: var(--border-radius-all);
 }
 
 /* Debugging */
