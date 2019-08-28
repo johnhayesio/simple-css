@@ -552,6 +552,7 @@ form .btn {
 
 label {
   margin: var(--label-margin);
+  text-align: left;
 }
 
 label:last-child {
@@ -1209,21 +1210,43 @@ tbody tr:nth-child(odd) {
 }
 
 /* Center All Row */
-.car {
+.cr {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.crl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
   margin: auto;
   width: 100%;
 }
 
 /* Center All Column */
-.cac {
+.cc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.ccl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
   margin: auto;
   width: 100%;
 }
@@ -1724,7 +1747,8 @@ tbody tr:nth-child(odd) {
   }
 
   /* Center All */
-  .car {
+  .cr,
+  .crl {
     flex-direction: column;
   }
 }
