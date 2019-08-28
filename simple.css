@@ -588,10 +588,6 @@ label:last-child {
   margin: var(--form-text-margin);
 }
 
-.input-group {
-  display: flex;
-}
-
 input[type="color"],
 input[type="date"],
 input[type="datetime-local"],
@@ -645,8 +641,8 @@ button {
 
 /* Input groups */
 .input-group {
-  width: 100%;
   display: flex;
+  width: 100%;
   margin: var(--input-group-margin);
 }
 
@@ -660,6 +656,7 @@ button {
   margin: 0;
   padding: var(--form-input-padding);
   border-radius: 0;
+  white-space: nowrap;
 }
 
 .input-group > input:first-child,
