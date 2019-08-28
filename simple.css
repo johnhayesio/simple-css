@@ -156,8 +156,8 @@
   /* Grid */
   --grid-template-columns-1: 1fr;
   --grid-template-columns-2: repeat(2, 1fr);
-  --grid-template-columns-12: 1fr, 2fr;
-  --grid-template-columns-21: 2fr, 1fr;
+  --grid-template-columns-12: 1fr 2fr;
+  --grid-template-columns-21: 2fr 1fr;
   --grid-template-columns-3: repeat(3, 1fr);
   --grid-template-columns-4: repeat(4, 1fr);
   --grid-template-columns-5: repeat(5, 1fr);
