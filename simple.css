@@ -587,6 +587,15 @@ label:last-child {
   display: flex;
 }
 
+.form-group-inline > input,
+.form-group-inline > button,
+.form-group-inline > .btn {
+  margin: 0;
+  padding: var(--form-input-padding);
+  border-radius: var(--border-radius-all);
+  white-space: nowrap;
+}
+
 .form-group-inline input:nth-child(even) {
   margin-right: var(--form-group-inline-margin);
 }
