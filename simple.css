@@ -10,7 +10,7 @@
   --container-margin: 3rem auto;
   --container-width: var(--container-max-width-xl);
   --fixed-padding: 69px; /* Navbar height screen */
-  --fixed-padding-mobile: 93px; /* Navbar height mobile */
+  --fixed-padding-mobile: 119px; /* Navbar height mobile */
   --border-radius-all: 5px;
 
   /* Fonts */
@@ -86,6 +86,9 @@
   --header-content-animation-fill-mode: forwards;
   --header-content-animation-duration: 1s;
   --header-content-animation-delay: 1.5s;
+
+  /* Footer */
+  --footer-padding: 1.35rem;
 
   /* Content */
   --body-color: var(--color-black);
@@ -440,8 +443,24 @@ h5,
   line-height: var(--header-text-line-height);
 }
 
-.fixed {
+.top-fixed {
   padding-top: var(--fixed-padding);
+}
+
+/* Footer */
+footer {
+  padding: var(--footer-padding);
+}
+
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: var(--fixed-padding);
+}
+
+.bottom-fixed {
+  padding-bottom: var(--fixed-padding);
 }
 
 /* Text */
@@ -1718,7 +1737,7 @@ table th {
     font-size: var(--header-subheadline-font-size-mobile);
   }
 
-  .fixed {
+  .top-fixed {
     padding-top: var(--fixed-padding-mobile);
   }
 
