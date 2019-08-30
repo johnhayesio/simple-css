@@ -573,6 +573,7 @@ form .btn {
 label {
   margin: var(--label-margin);
   text-align: left;
+  cursor: pointer;
 }
 
 label:last-child {
