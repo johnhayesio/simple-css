@@ -591,7 +591,7 @@ label:last-child {
 .form-group-inline > input,
 .form-group-inline > button,
 .form-group-inline > .btn {
-  margin: 0;
+  margin: var(--form-input-margin);
   padding: var(--form-input-padding);
   border-radius: var(--border-radius-all);
   white-space: nowrap;
