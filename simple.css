@@ -706,7 +706,7 @@ input[type="radio"]:disabled + .label-text {
 }
 
 input[type="radio"]:disabled + .label-text::before {
-  content: "\f0c8";
+  content: "\f111";
   font-weight: 900;
   color: var(--color-gray);
 }
