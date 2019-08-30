@@ -6,6 +6,7 @@
   /* Custom Variables */
   --font-family: var(--font-roboto);
   --navbar-opacity: 1;
+  --checkbox-color: var(--color-blue);
   --header-bg-image: url("https://source.unsplash.com/category/buildings/900x600/");
   --header-bg-image-brightness: 50%;
   --container-margin: 3rem auto;
