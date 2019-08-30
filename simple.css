@@ -396,15 +396,15 @@ h5,
 }
 
 .header-sm {
-  height: var(--header-sm-height);
+  min-height: var(--header-sm-height);
 }
 
 .header-lg {
-  height: var(--header-lg-height);
+  min-height: var(--header-lg-height);
 }
 
 .header-fs {
-  height: var(--header-fs-height);
+  min-height: var(--header-fs-height);
 }
 
 .header-sm::before,
