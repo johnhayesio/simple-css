@@ -641,6 +641,25 @@ textarea {
   border-radius: var(--border-radius-all);
 }
 
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+.select select:focus,
+textarea:focus {
+  outline: 0;
+  border-color: var(--input-focus-color);
+}
+
 input[type="checkbox"] {
   appearance: none;
   -moz-appearance: none;
@@ -658,6 +677,12 @@ input[type="checkbox"] + .label-text::before {
   line-height: 1;
   text-transform: none;
   line-height: 1;
+}
+
+input[type="checkbox"]:hover + .label-text::before {
+  content: "\f0c8";
+  font-weight: 900;
+  color: var(--color-gray);
 }
 
 input[type="checkbox"]:checked + .label-text::before {
@@ -695,6 +720,12 @@ input[type="radio"] + .label-text::before {
   line-height: 1;
 }
 
+input[type="radio"]:hover + .label-text::before {
+  content: "\f111";
+  font-weight: 900;
+  color: var(--color-gray);
+}
+
 input[type="radio"]:checked + .label-text::before {
   content: "\f192";
   display: inline-block;
@@ -722,8 +753,29 @@ input:focus::placeholder {
   color: transparent;
 }
 
-select {
+.select {
+  position: relative;
+}
+
+.select::after {
+  content: "\f0d7";
+  display: block;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   color: var(--color-gray);
+  top: 20%;
+  right: 1rem;
+  z-index: 1;
+}
+
+.select select {
+  background: none;
+  color: var(--color-gray);
+  border: 1px solid var(--state-secondary);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 select option {
@@ -733,12 +785,6 @@ select option {
 input[type="submit"],
 button {
   font: inherit;
-}
-
-.dropdown {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
 }
 
 /* Input groups */
