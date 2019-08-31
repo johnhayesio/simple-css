@@ -1920,7 +1920,12 @@ table th {
 
   .form-group-navbar input,
   .form-group-navbar button,
-  .form-group-navbar .btn,
+  .form-group-navbar .btn {
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: var(--border-radius-all);
+  }
+
   .input-group input,
   .input-group button,
   .input-group .btn {
