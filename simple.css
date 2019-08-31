@@ -788,22 +788,6 @@ button {
   font: inherit;
 }
 
-/* Font Awesome input icons */
-.fa-regular {
-  font-family: "Font Awesome 5 Free" !important;
-  font-weight: 400;
-}
-
-.fa-solid {
-  font-family: "Font Awesome 5 Free" !important;
-  font-weight: 900;
-}
-
-.fa-brands {
-  font-family: "Font Awesome 5 Brands" !important;
-  font-weight: 400;
-}
-
 /* Input groups */
 .input-group {
   display: flex;
