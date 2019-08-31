@@ -587,8 +587,18 @@ label:last-child {
   flex-direction: column;
 }
 
+.form-group-navbar,
 .form-group-inline {
   display: flex;
+}
+
+.form-group-navbar > input,
+.form-group-navbar > button,
+.form-group-navbar > .btn {
+  margin: 0;
+  padding: var(--form-input-padding);
+  border-radius: var(--border-radius-all);
+  white-space: nowrap;
 }
 
 .form-group-inline > input,
@@ -600,14 +610,17 @@ label:last-child {
   white-space: nowrap;
 }
 
+.form-group-navbar input:nth-child(even),
 .form-group-inline input:nth-child(even) {
   margin-right: var(--form-group-inline-margin);
 }
 
+.form-group-navbar input:nth-child(odd),
 .form-group-inline input:nth-child(odd) {
   margin-right: var(--form-group-inline-margin);
 }
 
+.form-group-navbar input:last-child,
 .form-group-inline input:last-child {
   margin-right: 0;
 }
@@ -1899,11 +1912,15 @@ table th {
   }
 
   /* Forms */
+  .form-group-navbar,
   .form-group-inline,
   .input-group {
     display: block;
   }
 
+  .form-group-navbar input,
+  .form-group-navbar button,
+  .form-group-navbar .btn,
   .input-group input,
   .input-group button,
   .input-group .btn {
@@ -1911,6 +1928,8 @@ table th {
     border-radius: var(--border-radius-all);
   }
 
+  .form-group-navbar input:first-of-type,
+  .form-group-navbar input:last-of-type,
   .input-group input:first-of-type,
   .input-group input:last-of-type {
     margin: var(--input-group-margin-mobile);
