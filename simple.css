@@ -315,12 +315,6 @@ ul {
   list-style: none;
 }
 
-img {
-  display: flex;
-  width: 100%;
-  border-radius: var(--border-radius-all);
-}
-
 h1,
 h2,
 h3,
@@ -330,6 +324,41 @@ h5,
 .text-lg,
 .text-xl {
   line-height: var(--text-line-height);
+}
+
+/* Images */
+img {
+  display: flex;
+  width: 100%;
+  border-radius: var(--border-radius-all);
+}
+
+.image {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.image::after {
+  content: "\f083 \2001"attr(alt) " Not Found";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-width: 300px;
+  margin-left: -16px;
+  padding: 10px 0;
+  border: 1px dashed var(--state-secondary);
+  color: var(--color-black);
+  background: var(--state-light);
+  z-index: 1;
 }
 
 /* Navbar */
