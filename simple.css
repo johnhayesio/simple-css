@@ -130,7 +130,7 @@
   --button-color: var(--color-white);
   --button-bg-color: var(--state-primary);
   --button-font-size: 1rem;
-  --button-xs-font-size: 0.75rem;
+  --button-xs-font-size: inherit;
   --button-sm-font-size: 0.875rem;
   --button-lg-font-size: 1.25rem;
   --button-xl-font-size: 1.5rem;
@@ -149,7 +149,7 @@
   --form-input-font-size: 1.2rem;
   --form-input-margin: 0.35rem 0 0 0;
   --form-input-padding: 0.4rem;
-  --form-button-margin: 1rem 0 0 0;
+  --form-button-margin: 0.5rem 0 0 0;
   --form-container-padding: 2rem;
   --text-form-margin: 0.3rem 0 0 0;
   --form-group-inline-margin: 0.5rem;
