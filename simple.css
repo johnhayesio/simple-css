@@ -130,10 +130,12 @@
   --button-color: var(--color-white);
   --button-bg-color: var(--state-primary);
   --button-font-size: 1rem;
+  --button-xs-font-size: 0.75rem;
   --button-sm-font-size: 0.875rem;
   --button-lg-font-size: 1.25rem;
   --button-xl-font-size: 1.5rem;
   --button-padding: 0.75rem 2.5rem;
+  --button-xs-padding: 0.3rem 1rem;
   --button-sm-padding: 0.5rem 1.5rem;
   --button-lg-padding: 1rem 4rem;
   --button-xl-padding: 1.25rem 4.5rem;
@@ -178,6 +180,7 @@
   --progress-font-size-sm: 0.875rem;
   --progress-font-size-lg: 1.25rem;
   --progress-height: 2.25rem;
+  --progress-height-xs: 0.5rem;
   --progress-height-sm: 1.75rem;
   --progress-height-lg: 2.75rem;
   --progress-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -621,6 +624,11 @@ img {
   padding: 0;
 }
 
+.btn-xs {
+  font-size: var(--button-xs-font-size);
+  padding: var(--button-xs-padding);
+}
+
 .btn-sm {
   font-size: var(--button-sm-font-size);
   padding: var(--button-sm-padding);
@@ -976,6 +984,11 @@ button {
   width: 75% !important;
   animation: progress-indeterminate ease-in-out
     var(--progress-speed-indeterminate) infinite;
+}
+
+.progress.progress-xs {
+  height: var(--progress-height-xs);
+  line-height: var(--progress-height-xs);
 }
 
 .progress.progress-sm {
