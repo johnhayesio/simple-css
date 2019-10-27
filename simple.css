@@ -623,6 +623,8 @@ img {
   opacity: var(--button-hover-opacity);
 }
 
+.block,
+.badge-block,
 .btn-block {
   display: block;
   width: 100%;
