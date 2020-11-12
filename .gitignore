@@ -1,3 +1,6 @@
 .prettierrc
 .vscode
 CNAME
+purged/
+.env
+.static
